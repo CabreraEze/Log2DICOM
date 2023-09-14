@@ -10,7 +10,7 @@
 #                                                                           #
 #   Author: Ezequiel Agustin Cabrera Lacey                                  #
 #   Date: 9-13-2023                                                         #
-#   Version: 0.1                                                            #      
+#   Version: 0.2                                                            #      
 #                                                                           #
 #   Recognitions:                                                           #
 #   -National University of Córdoba an Zunino Institute to provide the      #
@@ -335,7 +335,7 @@ class DicomBase:
         idx_order = []
         for beam in beam_index:
             order = 0
-            while 'Field ' + str(order +1) != self.raw_data.BeamSequence[beam].BeamName:
+            while 'Field ' + str(order +1) in self.raw_data.BeamSequence[beam].BeamName:
                 order += 1
                 if order == 100: popAdvice('Invalid beam names'); exit()
             idx_order.append(order)
@@ -863,9 +863,9 @@ class ModedDicom:
             plan.BeamSequence[beam].BeamName += ' mod'
         plan.ApprovalStatus = 'UNAPPROVED'
 
-        # Rename the UID, needed for import both the original and the modified plan to eclipse
+        # Rename the UID hour, needed for import both the original and the modified plan to eclipse
         new_uid = plan.SOPInstanceUID.split('.')
-        new_uid[-1] = str(int(new_uid[-1]) +1)
+        new_uid[-1] = str(int(new_uid[-1]) + np.random.randint(1,1000))
         new_uid = '.'.join(new_uid)
         plan.SOPInstanceUID = new_uid
 
