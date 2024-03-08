@@ -6,8 +6,7 @@ data to make appropriate modifications to DICOM files. Designed with
 precision and user-friendliness in mind, it streamlines the process of  
 adjusting medical imaging data based on logged operations or events.    
 
-# Author: 
-Ezequiel Agustin Cabrera Lacey                                  
+Author: Ezequiel Agustin Cabrera Lacey                                  
 Date: 9-13-2023                                                        
 Version: 1.0                                                              
 
