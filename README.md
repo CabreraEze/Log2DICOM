@@ -1,26 +1,23 @@
-#############################################################################
-#                                                                           #
-#   Log2DICOM: A python-based tool for Modifying original DICOM planning    #
-#   files based on measured treatment data                                  #
-#                                                                           #
-#############################################################################
+
+# Log2DICOM: A python-based tool for Modifying original DICOM planning files based on measured treatment data                                  
 
 This script extracts relevant information from log files and uses that  
 data to make appropriate modifications to DICOM files. Designed with    
 precision and user-friendliness in mind, it streamlines the process of  
 adjusting medical imaging data based on logged operations or events.    
 
-Author: Ezequiel Agustin Cabrera Lacey                                  
+# Author: 
+Ezequiel Agustin Cabrera Lacey                                  
 Date: 9-13-2023                                                        
 Version: 1.0                                                              
 
-Recognitions:                                                           
+# Recognitions:                                                           
 -National University of Córdoba an Zunino Institute to provide the      
 knowledge and space to make this project posible.                      
 -Dr. Miguel Chesta and Dr. Daniel Venencia for their contributions,    
 insights, and support during the development of this scritp.           
 
-DISCLAIMER:                                                             
+# DISCLAIMER:                                                             
 This software constitude the final project of a physics degree and is   
 provided "as is", without warranty of any kind, express or implied,     
 including but not limited to the warranties of merchantability, fitness 
